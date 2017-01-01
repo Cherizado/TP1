@@ -1,0 +1,13 @@
+In this are functions for use of complex integers of arbitrary size.  
+The functions use mpz_t as provided from the gmp library for C.
+
+Current functions are:
+
+void cadd(mpz_t rop, mpz_t op1, mpz_t op2)
+void csubtract(mpz_t rop, mpz_t op1, mpz_t op2)
+void cmultiply(mpz_t rop, mpz_t op1, mpz_t op2)
+void cconjugate(mpz_t rop, mpz_t op)
+void cnorm(mpz_t rop, mpz_t op, int squared)
+
+void creal(mpz_t rop, mpz_t op)
+void cimag(mpz_t rop, mpz_t op)
