@@ -123,3 +123,13 @@ void mpz_cimag(mpz_t rop, mpz_t_c op){
 
 }
 
+//prints out the complex number op
+void print_complex(mpz_t_c op){
+
+	printf("Real part: ");
+	mpz_out_str(NULL, 10, op.real);
+	printf("\nImag part: ");
+	mpz_out_str(NULL, 10, op.imag);
+	printf("\n");
+
+}

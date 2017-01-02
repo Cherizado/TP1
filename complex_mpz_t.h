@@ -25,4 +25,6 @@ void mpz_cnorm2(mpz_t_c* rop, mpz_t_c op);
 void mpz_creal(mpz_t rop, mpz_t_c op);
 void mpz_cimag(mpz_t rop, mpz_t_c op);
 
+void print_complex(mpz_t_c op);
+
 #endif

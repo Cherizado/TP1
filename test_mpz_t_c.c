@@ -63,11 +63,4 @@ int main(){
 
 }
 
-void print_complex(mpz_t_c op){
 
-	printf("Real part: ");
-	mpz_out_str(NULL, 10, op.real);
-	printf("\nImag part: ");
-	mpz_out_str(NULL, 10, op.imag);
-	printf("\n");
-}
