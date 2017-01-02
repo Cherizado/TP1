@@ -1,13 +1,21 @@
 In this are functions for use of complex integers of arbitrary size.  
 The functions use mpz_t as provided from the gmp library for C.
 
+Included in the class is a structure representing C as R2.
+
 Current functions are:
 
-void cadd(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2)
-void csubtract(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2)
-void cmultiply(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2)
-void cconjugate(mpz_t_c rop, mpz_t_c op)
-void cnorm(mpz_t_c rop, mpz_t_c op, int squared)
+void mpz_cinit(mpz_t_c op);
+void mpz_cinits(int arg_no, ...);
+void mpz_cset_val(mpz_t_c rop, mpz_t op1, mpz_t op2);
+void mpz_cset(mpz_t_c rop, mpz_t_c op);
+void mpz_cclear(mpz_t_c op);
 
-void creal(mpz_t rop, mpz_t_c op)
-void cimag(mpz_t rop, mpz_t_c op)
+void mpz_cadd(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2);
+void mpz_csub(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2);
+void mpz_cmul(mpz_t_c rop, mpz_t_c op1, mpz_t_c op2);
+void mpz_cconjugate(mpz_t_c rop, mpz_t_c op);
+void mpz_cnorm(mpz_t_c rop, mpz_t_c op, int squared);
+
+void mpz_creal(mpz_t rop, mpz_t_c op);
+void mpz_cimag(mpz_t rop, mpz_t_c op);
